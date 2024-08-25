@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Alphabets</title>
+    <link rel="stylesheet" href="style.css"> <!-- Move link to head -->
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Learn the Alphabets</h1>
+            <div id="displayContainer"></div>
+            <textarea id="alphabetInput" placeholder="Enter an alphabet" maxlength="1"></textarea>
+            
+            <button id="startMusicBtn">Start Music</button> <!-- Button to start music -->
+            <button id="wordBtn">Show Words</button> <!-- Button to show words -->
+            <div id="soundNotice">Enter an alphabet and click submit to hear its sound!</div>
+            <div id="wordDisplay"></div> <!-- Display related words -->
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="sounds/background.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* Font Import for a playful look */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/blank-sign-template-with-kids-having-party-park_1308-55407.jpg?w=996&t=st=1724438304~exp=1724438904~hmac=848f13f1ba1b0045549460acb33d183e870bfbc913cfbe9f3968c7cbe141cfbb');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Fredoka One', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    margin: 9em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-size: 3em;
+    color: #FF7043;
+    animation: bounceIn 1.5s ease;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 3px solid #42A5F5;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f1f8ff;
+}
+
+textarea:focus {
+    border-color: #FF7043;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.5em;
+    background-color: #66BB6A;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    animation: bounceIn 1s ease-out;
+    margin: 5px;  /* Added margin to separate buttons */
+}
+
+button:hover {
+    background-color: #388E3C;
+    transform: scale(1.1);
+}
+
+#displayContainer {
+    margin: 20px 0;
+    font-size: 8em;
+    color: #3F51B5;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out, bounceIn 0.3s ease-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+#displayContainer.animate {
+    transform: scale(1.2);
+}
+
+#soundNotice {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#wordDisplay {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animated-word {
+    font-size: 2em;
+    color: #FF7043;
+    display: inline-block;
+    margin: 10px;
+    animation: bounceAndSpin 1s ease forwards;
+}
+
+@keyframes bounceAndSpin {
+    0% {
+        transform: scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
